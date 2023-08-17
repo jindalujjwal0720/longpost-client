@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  background-color: aliceblue;
+}
+
+@media screen and (max-width: 420px) {
+  .logo {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.button {
+  margin: 8px;
+  padding: 8px 16px;
+  border: 1px solid black;
+  outline: 0;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+}
+
+.button:active {
+  background-color: #e1e1e1;
+}
+
+.button:focus {
+  box-shadow: 0 0 0 2px #e1e1e1;
+}
+
+.button:nth-child(2) {
+  background-color: black;
+  color: white;
+}
+
+.button:nth-child(2):hover {
+  background-color: #222;
+}

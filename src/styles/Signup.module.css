@@ -1,0 +1,90 @@
+.container {
+  display: grid;
+  place-items: center;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 300px;
+}
+
+.formGroup label {
+  font-weight: bold;
+}
+
+.formGroup input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: 0;
+}
+
+.formGroup input:focus {
+  box-shadow: 0 0 0 2px #e1e1e1;
+}
+
+.formGroup button {
+  margin-top: 8px;
+  padding: 8px 16px;
+  border: 1px solid #000;
+  outline: 0;
+  background-color: #000;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 24px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.error::before {
+  display: inline;
+  content: "⚠ ";
+}
+
+.error:first-letter {
+  text-transform: uppercase;
+}
+
+.forgotPassword {
+  margin-bottom: 0;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+}
+
+.forgotPassword:active {
+  color: #000;
+}
+
+.message {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.toggleAccount {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.toggleAccount a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.toggleAccount a:hover {
+  text-decoration: underline;
+}

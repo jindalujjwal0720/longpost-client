@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.createButton {
+  margin-top: 8px;
+  padding: 8px 24px;
+  border: 1px solid #000;
+  outline: 0;
+  background-color: #000;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 16px;
+}
+
+.createButton:hover {
+  background-color: #333;
+}
+
+.createButton:active {
+  background-color: #666;
+}
+
+.posts {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+@media screen and (max-width: 728px) {
+  .posts {
+    margin-top: 20px;
+  }
+}
